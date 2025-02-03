@@ -220,6 +220,11 @@
     </div>
 {%- endblock choice_widget_expanded %}
 
+{% block re_captcha_row %}
+    <div id="{{ id }}" data-toggle="recaptcha" data-type="{{ type }}">
+    </div>
+{% endblock %}
+
 {# Labels #}
 
 {% block form_label -%}
