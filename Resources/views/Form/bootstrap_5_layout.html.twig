@@ -291,6 +291,11 @@
     {{- parent() -}}
 {%- endblock form_label %}
 
+{% block re_captcha_row %}
+    <div id="{{ id }}" data-toggle="recaptcha" data-type="{{ type }}">
+    </div>
+{% endblock %}
+
 {%- block checkbox_radio_label -%}
     {#- Do not display the label if widget is not defined in order to prevent double label rendering -#}
     {%- if widget is defined -%}
